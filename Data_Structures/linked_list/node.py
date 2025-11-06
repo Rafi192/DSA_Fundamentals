@@ -9,3 +9,20 @@ class Node:
 node1 = Node(10)
 node2 = Node(20)
 node3 = Node(30)
+
+#linking the nodes
+node1.next = node2
+node2.next = node3
+
+
+class LinkedList:
+    def __init__(self) -> None:
+        self.head = None
+    
+    def print_list(self):
+        current = self.head
+        while current:
+            print(current.data, end=" -> ")
+            current = current.next
+        
+        print("none")
