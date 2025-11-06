@@ -26,3 +26,15 @@ class LinkedList:
             current = current.next
         
         print("none")
+
+
+l1 = LinkedList()
+l1.head = Node(10)
+second = Node(20)
+third = Node(30)
+
+#linking them
+l1.head.next = second
+second.next = third
+
+l1.print_list()
